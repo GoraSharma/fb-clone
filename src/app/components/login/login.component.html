@@ -1,0 +1,89 @@
+<div class="container">
+    <nav class="navbar">
+        <div class="logo">
+            <h2>Facebook</h2>
+        </div>
+        <div class="login_form">
+            <form >
+                <mat-form-field class="email" appearance="outline">
+                    <mat-label class="label">Email or Phone</mat-label>
+                    <input ngModel type="text" matInput placeholder="Enter your email">
+                </mat-form-field>
+
+                <mat-form-field class="password" appearance="outline">
+                    <mat-label ngModel class="label">Enter your password</mat-label>
+                    <input  matInput type="password">
+                    <!-- <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide"> -->
+                      <!-- <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon> -->
+                    <!-- </button> -->
+                  </mat-form-field>
+                <button type="submit" class="login_btn" (click)="login()">Log In</button>
+            </form>
+        </div>
+    </nav>
+    <main class="wrapper">
+        <div class="left_card">
+           
+            <div class="container_">
+                <div class="container_1">
+                    <img class="profile_photo" src="assets/images/Gourav_pp.jpg" alt="" srcset="">
+                    <h4>Gourav Sharma</h4>
+                    <!-- <p>__________</p> -->
+                    <p><strong>Tap</strong> to Login directly..</p>
+                </div>
+                <div class="container_2">
+                    <div class="add_account">
+                        <h1>+</h1>
+                        <!-- <p>Add Account</p> -->
+
+                        <span>Tap to Add a new Account to your saved accounts..</span>
+                        
+                    </div>
+                </div>
+             
+            </div>
+        </div>
+        <div class="right_card">
+            <div class="container_3">
+                <!-- <h2>Sign Up</h2>
+                <h3>It's quick and easy</h3> -->
+                <form  class="form">
+                  <div >
+                    <mat-form-field class="fn_ln" appearance="fill">
+                        <input matInput placeholder="First Name">
+                    </mat-form-field>
+                    <mat-form-field appearance="fill">
+                        <input matInput placeholder="Last Name">
+                    </mat-form-field>
+                  </div>
+                    <mat-form-field class="mb_number" appearance="fill">
+                        <input matInput placeholder="Email">
+                    </mat-form-field>
+
+                    <mat-form-field class="password_" appearance="fill">
+                       <input matInput type="password" placeholder="New password">
+                        
+                    </mat-form-field>
+
+                    <mat-form-field appearance="fill">
+                        <mat-label>Choose your birthdate</mat-label>
+                        <input matInput [matDatepicker]="picker">
+                        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                        <mat-datepicker #picker></mat-datepicker>
+                  </mat-form-field>
+
+                  <mat-radio-group class="gender" aria-label="Gender">
+                    <mat-radio-button class="radio_btn" value="1">Male</mat-radio-button>
+                    <mat-radio-button class="radio_btn" value="2">Female</mat-radio-button>
+                  </mat-radio-group>
+
+                  <p> By Signing up , you agree to our term and conditions. Learn how we use , share and collect data.</p>
+                  <button class="signup_btn">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Facebook &#169; 2021</p>
+    </footer>
+</div>

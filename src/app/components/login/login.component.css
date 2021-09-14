@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    
+}
+.navbar{
+    display: flex;
+    padding:5px 10px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #2953a6;
+}
+.logo{
+    margin-left: 20px;
+    padding-left: 20px;
+}
+.logo h2{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 2rem;
+
+}
+.login_btn{
+    color: white;
+    padding: 8px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #01308c;
+    margin: 2px 10px;
+}
+.label{
+    color: white;
+}
+.password,.email:focus{
+    margin: 0 10px;
+}
+
+.container_ img{
+    width: 200px;
+    height: 200px;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    background-color: whitesmoke;
+ 
+}
+main{
+    height: 90vh;
+}
+/* Left Grid */
+
+.container_{
+   margin: 0 auto;
+   display: flex;
+   justify-content: center;
+   margin-top: 100px;
+}
+.container_1{
+    box-shadow: 5px 5px 10px skyblue;
+    padding:0 30px;
+}
+.container_1 h4{
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 1.3rem;
+    color: teal;
+    padding: 10px 2px 2px 2px;
+}
+.container_1 p{
+    text-align: center;
+    font-style: italic;
+    color: #333;
+}
+.container_2{
+    width: 200px;
+    height: 300px;
+    box-shadow: 5px 5px 10px skyblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.add_account{
+    text-align: center;
+    padding:10px 10px;
+
+}
+.add_account h1{
+    font-size: 5rem;
+    color: steelblue;
+    padding:25px 0;
+    
+}
+.add_account span{
+    margin-top: 30px;
+    font-style: italic;
+    color: skyblue;
+    
+}
+
+/* Left Card Ends here */
+
+/* Right card start here */
+
+.right_card .container_3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding:20px 10px;
+}
+.container_3 h2{
+    margin: 0;
+    letter-spacing: 2px;
+    color: #333;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: white;
+    padding:10px;
+    width: 70%;
+
+}
+
+.fn_ln{
+    margin-right:10px;
+}
+.mb_number,.password_{
+    width: 95%;
+}
+.gender .radio_btn{
+    padding: 5px;
+}
+.form p{
+    padding: 5px 10px;
+    color: #333;
+}
+.signup_btn{
+    color: white;
+    background-color: #34c943;
+    padding: 5px 10px;
+    letter-spacing: 2px;
+    border-radius: 3px;
+    border: none;
+    font-size: 1.1rem;
+    width: 40%;
+}
+footer p{
+    padding: 2px 10px;
+    height: 23px;
+}
